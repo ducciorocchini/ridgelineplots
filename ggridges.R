@@ -17,5 +17,5 @@ dfpl <- df %>%
 colnames(dfpl)[1] <- "value"
 
 ggplot(dfpl, aes(x = value, y = as.factor(year), fill = stat(x))) +
-  geom_density_ridges_gradient(scale = 3, rel_min_height = 0.01) +
-  scale_fill_viridis_c(option = "C") 
+  geom_density_ridges_gradient(scale = 2, rel_min_height = 0.01) +
+  scale_fill_viridis_c(option = "magma") 
