@@ -29,6 +29,7 @@ im.ridgeplot <- function(im, scale, option) {
   
 }
 
-im.ridgeplot(r, 2, "H") +
-  theme_bw()
+# Example:
+# im.ridgeplot(r, 2, "H") +
+#  theme_bw()
 
