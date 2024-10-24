@@ -1,7 +1,9 @@
 # Original code: Elisa Thouverai
 # Arguments of the function: im = image, scale = dimension of the ridges in the final plot, option = viridis type of color ramp palette
 
-im.ridgeplot <- function(im, scale, option) {
+# library(tidyverse)
+# library(imageRy)
+im.ridgeline <- function(im, scale, option) {
   
   #Checking inputs
   if(!is(im, "SpatRaster")) stop("im must be a SpatRaster")
@@ -30,6 +32,9 @@ im.ridgeplot <- function(im, scale, option) {
 }
 
 # Example:
-# im.ridgeplot(r, 2, "H") +
-#  theme_bw()
+library(ggridges)
+library(terra)
+r <- im.import("greenland")
+im.ridgeplot(r, 2, "A") 
++ theme_bw()
 
