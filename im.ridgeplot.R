@@ -1,4 +1,5 @@
 # Original code: Elisa Thouverai
+# Arguments of the function: im = image, scale = dimension of the ridges in the final plot, option = viridis type of color ramp palette
 
 im.ridgeplot <- function(im, scale, option) {
   
