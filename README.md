@@ -1,4 +1,4 @@
-# Ridgeline plots examples
+# Ridgeline plots tests
 test on the interface between the imageRy package and the ggridges package.
 
 ## Final aim
